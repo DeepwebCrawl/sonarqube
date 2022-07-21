@@ -27,7 +27,7 @@ function sonarqube_docker_pull()
 function sonarqube_docker_path_file()
 {
     mkdir -p /opt/sonarqube/lib
-    cd /opt/sonarqube/lib && wget https://github.com/vncloudsco/random/releases/download/v3/sonar-application-9.5.0.56709.jar
+    wget https://github.com/vncloudsco/random/releases/download/v3/sonar-application-9.5.0.56709.jar -O /opt/sonarqube/lib/sonar-application-9.5.0.56709.jar
 }
 
 function sonarqube_docker_start()
